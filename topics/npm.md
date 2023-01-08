@@ -13,6 +13,10 @@ One might install a package locally on a certain project:
 
     npm install some-package
 
+To only save to packages development dependencies:
+
+    npm install --save-dev some-package
+
 Now let's say you want NodeJS to execute that package from the command line:
 
     $ some-package
@@ -66,7 +70,9 @@ when it is unwanted to define a dependency which might not be commonly used or a
 "scripts": {
     "start": "npx gulp@3.9.1",
     "serve": "npx http-server"
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
 }
 ```
 
-Call with: `npm run serve`
+Call with: `npm run serve` or `npm run serverstart`

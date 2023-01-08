@@ -241,3 +241,23 @@ document.getElementById("table").addEventListener(
     false
 );
 ```
+# Beginner Best Practices
+```css
+div {
+    height: /* use a minimum height */;
+    width: /* use a % */;
+    font-size: /* use rem */;
+    padding: /* use rem */;
+    margin: /* use rem */;
+    margin-inline: auto; /* center a div without flex */
+    margin-right: auto; /* if 2 pieces of text are on the same line, push right text all the way to the right */
+}
+
+[class*="grid-"] { /* apply to everything with class starting with grid- */
+display: grid;
+gap: 1rem;
+
+html, body, #root {
+    height: 100% /* object will cover the entire page */
+}
+```

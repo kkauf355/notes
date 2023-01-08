@@ -1,3 +1,14 @@
+# Create Express app
+```bash
+express helloworld  # creates helloworld directory
+# OR
+express hello-world --view=pug # creates hello-world directory with pug view templates. Uses Jade view templates by default
+cd helloworld
+npm install
+DEBUG=helloworld:* npm start
+```
+from the web browser, browse to localhost:3000
+
 # npm mssql
 
 Connections are expensive. Use them for one time open/close operations. Otherwise, use a pool when executing a series of queries.

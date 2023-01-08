@@ -23,6 +23,8 @@
 `history` - Lists all the commands used.  
 `CTRL` + `R` - Search command history. Hit again for previous command.
 
+bash <(curl -s http://www.nicknorton.net/mousewheel.sh) - change mouse speed
+
 # Information
 
 ```bash
