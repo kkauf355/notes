@@ -14,8 +14,11 @@
 -   Frameworks
     -   [React](./topics/react.md)
 -   Libraries
-    -   
-    -   
+    -   [tabulator](./topics/tabulator.md)
+    -   [tagify](./topics/tagify.md)
+    -   [pdfmake](./topics/pdfmake.md)
+    -   [sheetjs](./topics/sheetjs.md)
+    -   [Various](./topics/libraries-frontend.md)
 -   Other
     -   [CSS](./topics/css.md)
 
@@ -94,3 +97,16 @@
 ### **Containerization**
 
 -   [Docker](./topics/docker.md)
+
+# Linux
+
+### **Administration**
+
+-   [basics](./topics/linux.md)
+-   [filesystem](./topics/filesystem.md)
+-   [users](./topics/users.md)
+-   [config](./topics/config.md)
+
+### **Tools**
+
+-   [bash - scripting](./topics/bash.md)
