@@ -1,5 +1,20 @@
 React is a library that only takes care of rendering the view while making sure it's in sync with the state.
 
+# Vite Template Setup
+
+Vite allows developers to set up a development environment for frameworks like Vue, TezJS and React and even for Vanilla Javascript with a dev server.
+
+```bash
+npm create vite@latest
+```
+and then follow the prompts.
+
+```bash
+  cd my-project
+  npm install
+  npm run dev
+```
+
 # React Create App
 
 Zero-configuration setup, creates all the boilerplate for you.
