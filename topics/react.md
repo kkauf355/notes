@@ -61,6 +61,16 @@ This will permanently remove this tool and add all the abstracted dependencies i
 npm run eject
 ```
 
+# Deprecated Syntax
+```jsx
+<Route name="" /> is deprecated. Use <Route path="" /> instead.
+<Route handler="" /> is deprecated. Use <Route component="" /> instead.
+<NotFoundRoute /> is deprecated. Use <Route path="*" component={NoMatch}/> instead.
+<RouteHandler /> is deprecated.
+willTransitionTo is deprecated. Use onEnter.
+willTransitionFrom is deprecated. Use onLeave.
+```
+
 # Hello World
 
 ```javascript
