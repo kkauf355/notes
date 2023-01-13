@@ -56,7 +56,7 @@
 -   [Git](./topics/git.md)
 -   [Babel](./topics/babel.md)
 -   [Webpack](./topics/webpack.md)
--   Typescript
+-   [Typescript](./topics/typescript.md)
 -   [VS Code](./topics/vscode.md)
 
 ### **Architecture**
