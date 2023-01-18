@@ -5,6 +5,9 @@ express helloworld  # creates helloworld directory
 express hello-world --view=pug # creates hello-world directory with pug view templates. Uses Jade view templates by default
 cd helloworld
 npm install
+npm install --save express-validator
+npm install --save-dev nodemon
+npm install mongoose
 DEBUG=helloworld:* npm start
 ```
 from the web browser, browse to localhost:3000
