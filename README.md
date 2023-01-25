@@ -40,6 +40,9 @@
     -   [Caching](./topics/caching.md)
     -   [Logging](./topics/logging.md)
 
+### C#
+    [C#](./topics/cSharp)
+
 ### **Database**
 
 -   [Design](./topics/dbdesign.md)
