@@ -164,6 +164,21 @@ public class Employee {
     }
 }
 ```
+## Struct
+Like a class, but too simple to be a class
+Can be new'ed
+Can contain methods
+Created on stack
+```c#
+struct WorkTask {
+    public string description;
+    public int hours;
+
+    public void PerformWorkTask() {
+        // Perform work!
+    }
+}
+```
 
 ## Values Types and Reference Types
 #### value types
@@ -208,6 +223,9 @@ public int AddTwoNumbers(int a, out int b, out int c) {
 }
 ```
 
+## Static
+member defined on the class level, not the object level. Sometehing that is shared for all objects and should not change.
+
 # Visual Studio Shortcuts
 Ctrl + K -> Ctrl + C    add comment
 Ctrl + K -> Ctrl + U    remove comment
@@ -230,3 +248,6 @@ Protected: accessible to class in inheriters
 Constructor: called when instantiating an object with the new keyword (new objects are created by constructors)
 
 immutable: once created, it cannot be changed
+
+namespace: a way to organize types in groups (folder with subfolders)
+static: defined on the class level, not the object level. Sometehing that is shared for all objects and should not change.
