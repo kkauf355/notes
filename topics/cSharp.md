@@ -226,6 +226,10 @@ public int AddTwoNumbers(int a, out int b, out int c) {
 ## Static
 member defined on the class level, not the object level. Sometehing that is shared for all objects and should not change.
 
+## Null
+adding ? to variable type (double?) allows the variable to be a double OR null
+hourlyRate = rate ?? 10; // says if rate is null, make hourlyRate 10
+
 # Visual Studio Shortcuts
 Ctrl + K -> Ctrl + C    add comment
 Ctrl + K -> Ctrl + U    remove comment
