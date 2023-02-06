@@ -47,18 +47,9 @@ A project is a collection of files
 A namespace is a collection of classes inside of a project
 
 
-### Two Data Types
+## Two Data Types
 pre-defined     bool, int(int32), float, double, decimal, char, byte (sbyte), short(ushort), object, string
-user-defined    
-
-### Members on Primative Types
-a member is a field, property, or method within a class or structure
-int intMaxValue = int.MaxValue;
-char.IsWhiteSpace  .IsDigit  .IsLetter  
-
-Check the data type documention for members
-
-strings use "", chars use ''
+user-defined    enum, struct, class, interface, delegate
 
 ### Changing between types
 Implicit conversion
@@ -69,21 +60,50 @@ Casting (explicit conversion)
     int a = (int) d;
 Helpers
 
+## Member
+A field, property, or method within a class or structure
+    E.x. int.MaxValue, char.IsWhiteSpace,  .IsDigit,  .IsLetter 
 
+## Variable
+named space in memory to store data
+
+## Fields
+class level variables
 
 ## Methods
+class level functions which define behavior of an object
+
 ### Method Syntax
-method signature
 <access modifier> <return type> Method_Name (Parameters) {
     // code
 }
-OR <access modifier> <return type> Method_Name (Parameters) => <expression>
+OR 
+<access modifier> <return type> Method_Name (Parameters) => <expression>
 
+```c#
 public int AddTwoNumbers(int a, int b) {
     return a + b;
 }
+```
 
+## Properties
+wrap the fields to provides a flexible mechanism to read, write, or compute the value of a private field
+members of a class, just like methods that sit around the private data of a class
+hides implementation
+```c#
+public class Employee {
+    private int age;
+    public int Age {
+        get { return age; }
+        set { age = value; }
+    }
+}
+```
 
+## Access Modifiers
+Public: makes a method usable to the outside
+Private: only accessible from within the class
+Protected: accessible to class in inheriters
 
 ## Optional Parameters
 ```c#
@@ -103,9 +123,9 @@ public static int AddNumbers(int a, int b) {
 AddNumbers(b: 10, a: 20);
 ```
 
-
-
 ## Strings
+strings use "", chars use ''
+
 ### String Interpolation
 ```c#
 $"Hello {friend}, it's {me}"
@@ -180,6 +200,40 @@ struct WorkTask {
 }
 ```
 
+## Interfaces
+define a contract that must be implemented by classes that use it
+```c#
+public interface IEmployee {
+    void PerformWork();
+    int ReceiveWage();
+}
+```
+
+## Arrays
+```c#
+int[] sampleArray1 = new int[5];
+int[] sampleArray2 = new int[] {1,2,3,4,5};
+
+Array.Sort(sampleArray2);
+
+int[] array2Copy = new int[5];
+sampleArray2.CopyTo(array2Copy, 0);
+
+Array.Reverse(array2Copy);
+```
+
+## Lists
+```c#
+List<int> sampleList = new List<int>();
+sampleList.Add(2);
+sampleList.Add(4);
+sampleList.Remove(2);
+sampleList.Count;
+sampleList.Contains(2);
+sampleList.Clear();
+sampleList.Insert(0, 9);
+```
+
 ## Values Types and Reference Types
 #### value types
 fixed size, allocated by compiler on stack. Value is copied to this memory location. E.g. primitives (int, float, double, char), Enumerations, Structs
@@ -231,27 +285,38 @@ adding ? to variable type (double?) allows the variable to be a double OR null
 hourlyRate = rate ?? 10; // says if rate is null, make hourlyRate 10
 
 # Visual Studio Shortcuts
-Ctrl + K -> Ctrl + C    add comment
-Ctrl + K -> Ctrl + U    remove comment
-Ctrl + Shft + B         trigger build
-
-
+Add comment:        Ctrl + K -> Ctrl + C
+Remove comment:     Ctrl + K -> Ctrl + U
+Trigger build:      Ctrl + Shft + B
 
 # Vocab
-Variable: named space in memory to store data
-Fields: class level variables
-Methods: class level functions
-Properties: wrap the fields
-Events
-
-Interface: how it can be used
-Public: makes a method usable to the outside
-Private: only accessible from within the class
-Protected: accessible to class in inheriters
-
 Constructor: called when instantiating an object with the new keyword (new objects are created by constructors)
-
 immutable: once created, it cannot be changed
-
 namespace: a way to organize types in groups (folder with subfolders)
-static: defined on the class level, not the object level. Sometehing that is shared for all objects and should not change.
+virtual: signal that types can provide own implementation
+override: this version is the new version of the method
+
+# OOP
+## Encapsulation
+Containing information inside objects
+Only certain information is exposed
+Hides internal implementation of data
+Avoid data corruption
+Private and public
+
+## Abstraction
+Abstract representation of the program
+Only mechanisms useful for other objects are revealed
+    Implementation is hidden
+    making changes becomes easier
+
+## Inheritance
+Classes can resue functionality from others
+Relation between classes
+Lower development time because of reusability
+
+## Polymorphism
+Share behaviors but can be in more than one form
+Child can sstill be used like its parent
+Correct method will be used based on execution
+
