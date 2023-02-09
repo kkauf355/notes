@@ -172,7 +172,9 @@ An object is an instance of a class
 Employee kevin = new Employee();
 
 #### Adding a Constructor
-If we do not create a constructor, c# will create a default constructor for us
+A constructor is a method whose name is the same as the name of its type.
+They initialize new objects.
+If we do not create a constructor, c# will create a default constructor for us.
 ```c#
 public class Employee {
     public string firstName;
