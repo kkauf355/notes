@@ -281,3 +281,25 @@ Share behaviors but can be in more than one form
 Child can sstill be used like its parent
 Correct method will be used based on execution
 
+# Important NuGet packages
+
+### Microsoft.AspNetCore.JsonPatch
+
+### Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+### Microsoft.EntityFrameworkCore
+A modern object-database mapper for .NET. 
+
+### Microsoft.EntityFrameworkCore.Sqlite
+SQLite database provider for Entity Framework Core
+
+### Microsoft.EntityFrameworkCore.Tools
+used for Add-Migration of DB
+
+### Serilog.AspNetCore
+Also used:
+Serilog.Sinks.Console
+Serilog.Sinks.File
+
+### Swashbuckle.AspNetCore
+Swagger tools for documenting APIs built on ASP.NET Core
