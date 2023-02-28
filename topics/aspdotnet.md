@@ -22,4 +22,8 @@ The database interface
 ### Entity Framework Core
 Object-Relational Mapping (ORM) is a technique that lets you query and manipulate data from a database using an object-oriented paradigm
 
+## Repository Pattern
+An abstraction that reduces complexity and aims to make the code, safe for the repository implementation, presistence ignorant.
 
+### Persistence Ignorant
+Switching out the persistence technology is not the main purpose. Choosing the best one for each repository method is.
