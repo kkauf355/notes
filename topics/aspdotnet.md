@@ -13,9 +13,9 @@ IoC delegates the function of selecting a concrete implementation type for a cla
 A specialization of the Inversion of Control pattern which uses an object - the container - to initialize objects and provide the required dependencies to the object.
 
 #### Service registration types
-Transient
-Scoped
-Singleton
+Transient	(mail service)
+Scoped		(repositories)
+Singleton	(dataStore, FileExtensionContentTypeProvider)
 
 ## Entities
 The database interface

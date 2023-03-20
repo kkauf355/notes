@@ -303,3 +303,6 @@ Serilog.Sinks.File
 
 ### Swashbuckle.AspNetCore
 Swagger tools for documenting APIs built on ASP.NET Core
+
+### Automapper
+Tool for mapping entity to DTO
